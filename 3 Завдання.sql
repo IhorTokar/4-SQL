@@ -1,15 +1,15 @@
 USE CulinaryForum;
 GO
 
--- Модифікація значень у таблиці Users для одного поля
+-- Оновлення значення поля email з унікальною адресою
 UPDATE Users
-SET email = 'newadmin@example.com'
-WHERE username = 'admin';
+SET email = 'uniqueadmin@example.com'
+WHERE role_id = 2 AND email != 'uniqueadmin@example.com';
 GO
 
--- Модифікація значень у таблиці Users для групи полів
+-- Оновлення значень групи полів username та password_hash
 UPDATE Users
-SET email = CONCAT(username, '@updated.com'), 
-    password_hash = 'new_hashed_password'
+SET username = 'updatedusername', 
+    password_hash = 'updatedhashedpassword'
 WHERE role_id = 2;
 GO
