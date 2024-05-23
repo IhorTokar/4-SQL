@@ -2,7 +2,7 @@ USE CulinaryForum;
 -- Імпорт даних з файлів CSV для таблиці Roles
 BULK INSERT Roles
 --шлях до файлу з ролями
-FROM 'C:\Users\valer\Desktop\roles.csv'
+FROM 'D:\roles.csv'
 WITH (
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
@@ -10,13 +10,13 @@ WITH (
 );
 GO
 
--- Імпорт даних з файлів CSV для таблиці Users
-BULK INSERT Users
---шлях до файлу з користувачами
-FROM 'C:\Users\valer\Desktop\roles.csv'
+-- Імпорт даних з файлу users.txt до таблиці I
+BULK INSERT Recipe_Ingredients
+FROM 'D:\ingridients.txt'
 WITH (
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
-    FIRSTROW = 2
+    FIRSTROW = 2  -- Ігнорувати перший рядок, оскільки він містить заголовки стовпців
+
 );
-GO
+
