@@ -1,7 +1,0 @@
-username,email,password_hash,role_id
-admin,admin@example.com,hashed_password,1
-user1,user1@example.com,hashed_password,2
-user2,user2@example.com,hashed_password,2
-guest1,guest1@example.com,hashed_password,3
-editor1,editor1@example.com,hashed_password,4
-moderator1,moderator1@example.com,hashed_password,5
