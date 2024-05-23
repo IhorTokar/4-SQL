@@ -1,13 +1,13 @@
 USE CulinaryForum;
 GO
 
--- Модифікація значень у таблиці Users для одного поля
+-- РњРѕРґРёС„С–РєР°С†С–СЏ Р·РЅР°С‡РµРЅСЊ Сѓ С‚Р°Р±Р»РёС†С– Users РґР»СЏ РѕРґРЅРѕРіРѕ РїРѕР»СЏ
 UPDATE Users
 SET email = 'newadmin@example.com'
 WHERE username = 'admin';
 GO
 
--- Модифікація значень у таблиці Users для групи полів
+-- РњРѕРґРёС„С–РєР°С†С–СЏ Р·РЅР°С‡РµРЅСЊ Сѓ С‚Р°Р±Р»РёС†С– Users РґР»СЏ РіСЂСѓРїРё РїРѕР»С–РІ
 UPDATE Users
 SET email = CONCAT(username, '@updated.com'), 
     password_hash = 'new_hashed_password'
