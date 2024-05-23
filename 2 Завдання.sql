@@ -1,7 +1,7 @@
 USE CulinaryForum;
--- Імпорт даних з файлів CSV для таблиці Roles
+-- Р†РјРїРѕСЂС‚ РґР°РЅРёС… Р· С„Р°Р№Р»С–РІ CSV РґР»СЏ С‚Р°Р±Р»РёС†С– Roles
 BULK INSERT Roles
---шлях до файлу з ролями
+--С€Р»СЏС… РґРѕ С„Р°Р№Р»Сѓ Р· СЂРѕР»СЏРјРё
 FROM 'C:\Users\valer\Desktop\roles.csv'
 WITH (
     FIELDTERMINATOR = ',',
@@ -10,9 +10,9 @@ WITH (
 );
 GO
 
--- Імпорт даних з файлів CSV для таблиці Users
+-- Р†РјРїРѕСЂС‚ РґР°РЅРёС… Р· С„Р°Р№Р»С–РІ CSV РґР»СЏ С‚Р°Р±Р»РёС†С– Users
 BULK INSERT Users
---шлях до файлу з користувачами
+--С€Р»СЏС… РґРѕ С„Р°Р№Р»Сѓ Р· РєРѕСЂРёСЃС‚СѓРІР°С‡Р°РјРё
 FROM 'C:\Users\valer\Desktop\roles.csv'
 WITH (
     FIELDTERMINATOR = ',',
